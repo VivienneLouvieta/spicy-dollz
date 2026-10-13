@@ -6,6 +6,5 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY server.py ./
 COPY public ./public
 ENV DATA_DIR=/data PORT=8000
-VOLUME /data
 EXPOSE 8000
 CMD ["python", "server.py"]
